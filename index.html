@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tanzeel Ahmed | Full Stack Developer</title>
+    <title>Tanzeel Ahmed | Project Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -13,254 +13,608 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="images/A.png" />
+    <link rel="icon" type="image/x-icon" href="images/profile.jpg" />
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <i class="ri-code-s-slash-line me-2"></i>Tanzeel<span
-            class="text-primary"
-            >Ahmed</span
-          >
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <i class="ri-code-box-line me-2"></i>
+          <span class="fw-bold">Tanzeel</span
+          ><span class="text-primary fw-bold">Projects</span>
         </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          data-bs-target="#mainNav"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link active" href="index.html">
+                <i class="ri-home-4-line me-1"></i> Home
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="ri-stack-line me-1"></i> Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="projects/techstore.html"
+                    >TechStore E-commerce</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="projects/portfolio.html"
+                    >Portfolio Website</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="projects/weather-app.html"
+                    >Weather App</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="projects/news-hub.html"
+                    >News Hub</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="projects/temp-converter.html"
+                    >Temperature Converter</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#about">
+                <i class="ri-user-line me-1"></i> About
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#skills">
+                <i class="ri-tools-line me-1"></i> Skills
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">
+                <i class="ri-contacts-line me-1"></i> Contact
+              </a>
             </li>
           </ul>
+          <div class="d-flex ms-3">
+            <button class="btn btn-outline-primary btn-sm" id="themeToggle">
+              <i class="ri-moon-line"></i>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
+    <!-- Hero Banner -->
+    <header class="hero-banner">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h1 class="display-4 fw-bold">
-              Hi, I'm <span class="text-primary">Tanzeel Ahmed</span>
+        <div class="row align-items-center py-5">
+          <div class="col-lg-8">
+            <h1 class="display-4 fw-bold mb-3">
+              <span class="text-gradient">Project Portfolio</span> Showcase
             </h1>
-            <h2 class="mb-4">Full Stack Web Developer</h2>
             <p class="lead mb-4">
-              Passionate developer from Pakistan building modern web solutions
-              with cutting-edge technologies.
+              Explore my collection of web development projects. Each card
+              represents a complete application with detailed documentation,
+              source code, and live demos.
             </p>
-            <div class="d-flex gap-3">
-              <a href="#projects" class="btn btn-primary btn-lg"
-                >View My Work</a
-              >
-              <a href="#contact" class="btn btn-outline-light btn-lg"
-                >Contact Me</a
-              >
-            </div>
-            <div class="social-icons mt-4">
-              <a href="https://github.com/Tanzeel804" class="social-icon"
-                ><i class="ri-github-fill"></i
-              ></a>
-              <a
-                href="https://linkedin.com/in/tanzeel-ahmed-b21288397"
-                class="social-icon"
-                ><i class="ri-linkedin-fill"></i
-              ></a>
-              <a href="https://twitter.com/TanzeelOnX" class="social-icon"
-                ><i class="ri-twitter-fill"></i
-              ></a>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-primary">React</span>
+              <span class="badge bg-success">Node.js</span>
+              <span class="badge bg-warning">JavaScript</span>
+              <span class="badge bg-info">Python</span>
+              <span class="badge bg-danger">MongoDB</span>
             </div>
           </div>
-          <div class="col-lg-6">
-            <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              class="img-fluid rounded-circle hero-img"
-              alt="Developer Profile"
-            />
+          <div class="col-lg-4 text-center">
+            <div class="profile-avatar">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Tanzeel Ahmed"
+                class="img-fluid rounded-circle border border-4 border-primary"
+              />
+              <div class="profile-badge">
+                <span class="badge bg-dark">Full Stack Dev</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </header>
+
+    <!-- Projects Grid Section -->
+    <main class="container py-5" style="margin-top: 80px">
+      <div class="section-header mb-5">
+        <h2 class="section-title">
+          <i class="ri-folder-open-line me-2"></i> Featured Projects
+        </h2>
+        <p class="section-subtitle">
+          Click on any project card to view complete details, code, and
+          documentation
+        </p>
+      </div>
+
+      <!-- Projects Filter -->
+      <div class="row mb-4">
+        <div class="col">
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">
+              All Projects
+            </button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+            <button class="filter-btn" data-filter="fullstack">
+              Full Stack
+            </button>
+            <button class="filter-btn" data-filter="tools">Tools</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="row g-4" id="projectsGrid">
+        <!-- Project Card 1: TechStore E-commerce -->
+        <div class="col-lg-4 col-md-6" data-category="fullstack">
+          <div class="project-card">
+            <div class="project-card-header">
+              <span class="project-badge bg-primary">Full Stack</span>
+              <span class="project-date">Jan 2024</span>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              class="project-card-img"
+              alt="TechStore E-commerce"
+            />
+            <div class="project-card-body">
+              <h3 class="project-title">TechStore E-commerce</h3>
+              <p class="project-description">
+                Complete online electronics store with shopping cart, user
+                authentication, payment integration, and admin dashboard.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Stripe API</span>
+              </div>
+              <div class="project-stats">
+                <span><i class="ri-code-line"></i> 5000+ Lines</span>
+                <span><i class="ri-time-line"></i> 2 Months</span>
+                <span><i class="ri-star-line"></i> 45 Stars</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="projects/techstore.html" class="btn btn-primary">
+                <i class="ri-external-link-line me-1"></i> View Project Details
+              </a>
+              <a
+                href="https://github.com/Tanzeel804"
+                class="btn btn-outline-secondary"
+                target="_blank"
+              >
+                <i class="ri-github-line me-1"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2: Portfolio Website -->
+        <div class="col-lg-4 col-md-6" data-category="frontend">
+          <div class="project-card">
+            <div class="project-card-header">
+              <span class="project-badge bg-success">Frontend</span>
+              <span class="project-date">Dec 2023</span>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              class="project-card-img"
+              alt="Portfolio Website"
+            />
+            <div class="project-card-body">
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-description">
+                Personal portfolio with modern design, responsive layout,
+                project showcase, and contact form with email integration.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <div class="project-stats">
+                <span><i class="ri-code-line"></i> 1500+ Lines</span>
+                <span><i class="ri-time-line"></i> 3 Weeks</span>
+                <span><i class="ri-star-line"></i> 28 Stars</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="projects/portfolio.html" class="btn btn-primary">
+                <i class="ri-external-link-line me-1"></i> View Project Details
+              </a>
+              <a
+                href="https://tanzeel804.github.io/portfolio-main/"
+                class="btn btn-outline-secondary"
+                target="_blank"
+              >
+                <i class="ri-link me-1"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3: Weather App -->
+        <div class="col-lg-4 col-md-6" data-category="frontend">
+          <div class="project-card">
+            <div class="project-card-header">
+              <span class="project-badge bg-info">API Integration</span>
+              <span class="project-date">Nov 2023</span>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              class="project-card-img"
+              alt="Weather App"
+            />
+            <div class="project-card-body">
+              <h3 class="project-title">Weather App</h3>
+              <p class="project-description">
+                Real-time weather application with location detection, 5-day
+                forecast, multiple cities support, and beautiful UI animations.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">API</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Axios</span>
+              </div>
+              <div class="project-stats">
+                <span><i class="ri-code-line"></i> 800+ Lines</span>
+                <span><i class="ri-time-line"></i> 2 Weeks</span>
+                <span><i class="ri-star-line"></i> 32 Stars</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="projects/weather-app.html" class="btn btn-primary">
+                <i class="ri-external-link-line me-1"></i> View Project Details
+              </a>
+              <a
+                href="https://github.com/Tanzeel804"
+                class="btn btn-outline-secondary"
+                target="_blank"
+              >
+                <i class="ri-github-line me-1"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 4: News Hub -->
+        <div class="col-lg-4 col-md-6" data-category="fullstack">
+          <div class="project-card">
+            <div class="project-card-header">
+              <span class="project-badge bg-warning">News Aggregator</span>
+              <span class="project-date">Oct 2023</span>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              class="project-card-img"
+              alt="News Hub"
+            />
+            <div class="project-card-body">
+              <h3 class="project-title">News Hub</h3>
+              <p class="project-description">
+                News aggregator pulling from multiple sources with category
+                filtering, search functionality, and bookmarking features.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">News API</span>
+              </div>
+              <div class="project-stats">
+                <span><i class="ri-code-line"></i> 3000+ Lines</span>
+                <span><i class="ri-time-line"></i> 6 Weeks</span>
+                <span><i class="ri-star-line"></i> 19 Stars</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="projects/news-hub.html" class="btn btn-primary">
+                <i class="ri-external-link-line me-1"></i> View Project Details
+              </a>
+              <a
+                href="https://github.com/Tanzeel804"
+                class="btn btn-outline-secondary"
+                target="_blank"
+              >
+                <i class="ri-github-line me-1"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 5: Temperature Converter -->
+        <div class="col-lg-4 col-md-6" data-category="tools">
+          <div class="project-card">
+            <div class="project-card-header">
+              <span class="project-badge bg-secondary">Utility Tool</span>
+              <span class="project-date">Sep 2023</span>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              class="project-card-img"
+              alt="Temperature Converter"
+            />
+            <div class="project-card-body">
+              <h3 class="project-title">Temperature Converter</h3>
+              <p class="project-description">
+                Advanced unit conversion tool supporting multiple temperature
+                scales with history tracking and favorite conversions.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">LocalStorage</span>
+              </div>
+              <div class="project-stats">
+                <span><i class="ri-code-line"></i> 500+ Lines</span>
+                <span><i class="ri-time-line"></i> 1 Week</span>
+                <span><i class="ri-star-line"></i> 15 Stars</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="projects/temp-converter.html" class="btn btn-primary">
+                <i class="ri-external-link-line me-1"></i> View Project Details
+              </a>
+              <a
+                href="https://github.com/Tanzeel804"
+                class="btn btn-outline-secondary"
+                target="_blank"
+              >
+                <i class="ri-github-line me-1"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 6: Coming Soon -->
+        <div class="col-lg-4 col-md-6" data-category="fullstack">
+          <div class="project-card coming-soon">
+            <div class="project-card-header">
+              <span class="project-badge bg-dark">Coming Soon</span>
+              <span class="project-date">Mar 2024</span>
+            </div>
+            <div class="coming-soon-placeholder">
+              <i class="ri-question-line"></i>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">New Project in Development</h3>
+              <p class="project-description">
+                Currently working on an exciting new full-stack project. Details
+                will be revealed soon!
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">GraphQL</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <button class="btn btn-outline-dark" disabled>
+                <i class="ri-time-line me-1"></i> Coming Soon
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- About Section -->
-    <section id="about" class="section-padding">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="about-content">
-              <p>
-                Full Stack Developer with 2+ years of experience specializing in
-                modern web technologies including React, Node.js, and Python.
-                Passionate about creating efficient solutions and continuously
-                learning new technologies.
-              </p>
+    <section id="about" class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+          <div class="about-avatar">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+              alt="Tanzeel Ahmed"
+              class="img-fluid rounded-circle shadow"
+            />
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <h2 class="mb-4">
+            About <span class="text-primary">Tanzeel Ahmed</span>
+          </h2>
+          <p class="lead mb-4">
+            Full Stack Developer from Pakistan with 2+ years of experience in
+            web development. I specialize in building responsive websites,
+            e-commerce platforms, and web applications.
+          </p>
+          <div class="row">
+            <div class="col-md-6">
               <ul class="about-list">
                 <li>
-                  <i class="ri-checkbox-circle-fill"></i> Can solve Rubik's cube
-                  in under 2 minutes
+                  <i class="ri-checkbox-circle-fill text-success"></i> Can solve
+                  Rubik's cube in under 2 minutes
                 </li>
                 <li>
-                  <i class="ri-checkbox-circle-fill"></i> Built a complete
-                  website in 24 hours
+                  <i class="ri-checkbox-circle-fill text-success"></i> Built a
+                  complete website in 24 hours
                 </li>
                 <li>
-                  <i class="ri-checkbox-circle-fill"></i> Passionate about
-                  photography
+                  <i class="ri-checkbox-circle-fill text-success"></i>
+                  Passionate about photography
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="about-list">
+                <li>
+                  <i class="ri-checkbox-circle-fill text-success"></i> 15+
+                  Projects Completed
                 </li>
                 <li>
-                  <i class="ri-checkbox-circle-fill"></i> Open for freelance
-                  projects
+                  <i class="ri-checkbox-circle-fill text-success"></i> 8+ GitHub
+                  Repositories
+                </li>
+                <li>
+                  <i class="ri-checkbox-circle-fill text-success"></i> Open for
+                  freelance work
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="stats-grid">
-              <div class="stat-card">
-                <h3>15+</h3>
-                <p>Projects Completed</p>
-              </div>
-              <div class="stat-card">
-                <h3>2+</h3>
-                <p>Years Experience</p>
-              </div>
-              <div class="stat-card">
-                <h3>20+</h3>
-                <p>Technologies Used</p>
-              </div>
-              <div class="stat-card">
-                <h3>8+</h3>
-                <p>GitHub Repos</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section-padding bg-light">
-      <div class="container">
-        <h2 class="section-title">My Projects</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="project-card">
-              <img
-                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                class="card-img-top"
-                alt="E-commerce"
-              />
-              <div class="project-content">
-                <h5>TechStore E-commerce</h5>
-                <p>
-                  Full-featured online electronics store with payment
-                  integration
-                </p>
-                <span class="badge bg-primary">React</span>
-                <span class="badge bg-success">Node.js</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="project-card">
-              <img
-                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                class="card-img-top"
-                alt="Portfolio"
-              />
-              <div class="project-content">
-                <h5>Portfolio Website</h5>
-                <p>
-                  Personal portfolio with modern design and responsive layout
-                </p>
-                <span class="badge bg-warning">HTML/CSS</span>
-                <span class="badge bg-info">JavaScript</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="project-card">
-              <img
-                src="https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                class="card-img-top"
-                alt="Weather App"
-              />
-              <div class="project-content">
-                <h5>Weather App</h5>
-                <p>
-                  Real-time weather application with location-based forecasts
-                </p>
-                <span class="badge bg-danger">API</span>
-                <span class="badge bg-success">JavaScript</span>
-              </div>
-            </div>
+          <div class="mt-4">
+            <a href="#contact" class="btn btn-primary me-2">
+              <i class="ri-mail-line me-1"></i> Contact Me
+            </a>
+            <a
+              href="https://github.com/Tanzeel804"
+              class="btn btn-outline-secondary"
+              target="_blank"
+            >
+              <i class="ri-github-line me-1"></i> View GitHub
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section-padding">
+    <section id="skills" class="bg-light py-5">
       <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
+        <h2 class="text-center mb-5">Technical Skills</h2>
         <div class="row">
-          <div class="col-md-6">
-            <h4>Frontend</h4>
-            <div class="skill-item">
-              <span>React</span>
-              <div class="progress">
-                <div class="progress-bar" style="width: 90%"></div>
+          <div class="col-md-4 mb-4">
+            <div class="skill-category">
+              <h4><i class="ri-code-s-slash-line me-2"></i> Frontend</h4>
+              <div class="skill-item">
+                <span>React / Next.js</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
               </div>
-            </div>
-            <div class="skill-item">
-              <span>JavaScript</span>
-              <div class="progress">
-                <div class="progress-bar" style="width: 85%"></div>
+              <div class="skill-item">
+                <span>JavaScript / TypeScript</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
               </div>
-            </div>
-            <div class="skill-item">
-              <span>HTML/CSS</span>
-              <div class="progress">
-                <div class="progress-bar" style="width: 95%"></div>
+              <div class="skill-item">
+                <span>HTML5 / CSS3</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 95%"></div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <h4>Backend</h4>
-            <div class="skill-item">
-              <span>Node.js</span>
-              <div class="progress">
-                <div class="progress-bar" style="width: 88%"></div>
+          <div class="col-md-4 mb-4">
+            <div class="skill-category">
+              <h4><i class="ri-server-line me-2"></i> Backend</h4>
+              <div class="skill-item">
+                <span>Node.js / Express</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Python / Flask</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>REST APIs</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
               </div>
             </div>
-            <div class="skill-item">
-              <span>Python</span>
-              <div class="progress">
-                <div class="progress-bar" style="width: 80%"></div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="skill-category">
+              <h4><i class="ri-database-2-line me-2"></i> Databases & Tools</h4>
+              <div class="skill-item">
+                <span>MongoDB / MySQL</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Git / GitHub</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 92%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Docker / AWS</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
               </div>
             </div>
-            <div class="skill-item">
-              <span>MongoDB</span>
-              <div class="progress">
-                <div class="progress-bar" style="width: 75%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+      <h2 class="text-center mb-5">Get In Touch</h2>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="contact-info text-center">
+            <div class="contact-item mb-4">
+              <i class="ri-mail-line display-4 text-primary mb-3"></i>
+              <h4>Email</h4>
+              <p class="mb-0">tanzeel.ahmed.se@gmail.com</p>
+              <small class="text-muted">Response within 24 hours</small>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-4">
+                <a
+                  href="https://github.com/Tanzeel804"
+                  class="contact-link"
+                  target="_blank"
+                >
+                  <i class="ri-github-line me-2"></i> GitHub
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a
+                  href="https://linkedin.com/in/tanzeel-ahmed-b21288397"
+                  class="contact-link"
+                  target="_blank"
+                >
+                  <i class="ri-linkedin-line me-2"></i> LinkedIn
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a
+                  href="https://twitter.com/TanzeelOnX"
+                  class="contact-link"
+                  target="_blank"
+                >
+                  <i class="ri-twitter-line me-2"></i> Twitter
+                </a>
               </div>
             </div>
           </div>
@@ -269,55 +623,142 @@
     </section>
 
     <!-- Footer -->
-    <footer id="contact" class="footer">
+    <footer class="bg-dark text-white py-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
-            <h3 class="footer-logo">Tanzeel<span>Ahmed</span></h3>
-            <p class="footer-text">
-              Full Stack Developer specializing in modern web technologies and
-              creating efficient digital solutions.
+          <div class="col-lg-4 mb-4">
+            <h4 class="footer-logo">
+              <i class="ri-code-box-line me-2"></i>Tanzeel<span
+                class="text-primary"
+                >Projects</span
+              >
+            </h4>
+            <p class="mt-3">
+              A showcase of web development projects by Tanzeel Ahmed, Full
+              Stack Developer from Pakistan.
             </p>
           </div>
-          <div class="col-lg-4">
-            <h4>Quick Links</h4>
-            <ul class="footer-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#skills">Skills</a></li>
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-light text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="text-light text-decoration-none"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#skills" class="text-light text-decoration-none"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-light text-decoration-none"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
-          <div class="col-lg-4">
-            <h4>Contact Info</h4>
-            <ul class="contact-info">
-              <li><i class="ri-mail-line"></i> tanzeel.ahmed.se@gmail.com</li>
-              <li><i class="ri-github-fill"></i> github.com/Tanzeel804</li>
-              <li><i class="ri-map-pin-line"></i> Pakistan (UTC+5)</li>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5>Projects</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="projects/techstore.html"
+                  class="text-light text-decoration-none"
+                  >TechStore</a
+                >
+              </li>
+              <li>
+                <a
+                  href="projects/portfolio.html"
+                  class="text-light text-decoration-none"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="projects/weather-app.html"
+                  class="text-light text-decoration-none"
+                  >Weather App</a
+                >
+              </li>
+              <li>
+                <a
+                  href="projects/news-hub.html"
+                  class="text-light text-decoration-none"
+                  >News Hub</a
+                >
+              </li>
             </ul>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <h5>Connect</h5>
+            <div class="social-links">
+              <a
+                href="https://github.com/Tanzeel804"
+                class="social-icon"
+                target="_blank"
+              >
+                <i class="ri-github-line"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/tanzeel-ahmed-b21288397"
+                class="social-icon"
+                target="_blank"
+              >
+                <i class="ri-linkedin-line"></i>
+              </a>
+              <a
+                href="https://twitter.com/TanzeelOnX"
+                class="social-icon"
+                target="_blank"
+              >
+                <i class="ri-twitter-line"></i>
+              </a>
+              <a
+                href="https://instagram.com/tanzeelahmedpov"
+                class="social-icon"
+                target="_blank"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+            </div>
+            <div class="mt-3">
+              <p class="mb-1"><i class="ri-map-pin-line me-2"></i> Pakistan</p>
+              <p class="mb-0"><i class="ri-time-line me-2"></i> UTC+5 (PKT)</p>
+            </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2024 Tanzeel Ahmed. All rights reserved.</p>
-          <div class="social-links">
-            <a href="https://github.com/Tanzeel804"
-              ><i class="ri-github-fill"></i
-            ></a>
-            <a href="https://linkedin.com/in/tanzeel-ahmed-b21288397"
-              ><i class="ri-linkedin-fill"></i
-            ></a>
-            <a href="https://twitter.com/TanzeelOnX"
-              ><i class="ri-twitter-fill"></i
-            ></a>
-            <a href="https://instagram.com/tanzeelahmedpov"
-              ><i class="ri-instagram-line"></i
-            ></a>
+        <hr class="bg-light" />
+        <div class="row">
+          <div class="col-md-6">
+            <p class="mb-0">&copy; 2024 Tanzeel Ahmed. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0">
+              <span class="me-3"
+                >Portfolio:
+                <a
+                  href="https://tanzeel804.github.io/portfolio-main/"
+                  class="text-light"
+                  >tanzeel804.github.io</a
+                ></span
+              >
+              <span
+                >Email:
+                <a href="mailto:tanzeel.ahmed.se@gmail.com" class="text-light"
+                  >tanzeel.ahmed.se@gmail.com</a
+                ></span
+              >
+            </p>
           </div>
         </div>
       </div>
-      <button id="backToTop" class="back-to-top">
-        <i class="ri-arrow-up-line"></i>
-      </button>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
